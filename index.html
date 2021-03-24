@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <h1>Zombie Run Registeration</h1>
+
+    <form action="" method="get" class="zombie-form">
+        <div>
+            <label for="firstName">First Name</label>
+            <input type="text" name="firstName" id="firstName" required>
+            <label for="lastName">Last Name</label>
+            <input type="text" name="lastName" id="lastName" required>
+
+            <p>Select a Location:</p>
+
+            <div>
+                <input type="radio" id="seattle" name="location" value="seattle">
+                <label for="seattle">Seattle</label>
+            </div>
+            <div>
+                <input type="radio" id="nyc" name="location" value="nyc">
+                <label for="nyc">New York City</label>
+            </div>
+            <div>
+                <input type="radio" id="lasVegas" name="location" value="lasVegas">
+                <label for="lasVegas">Las Vegas</label>
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+                <label for="pass">Password</label>
+                <input type="password" name="pass" id="pass" required>
+            </div>
+
+            <div>
+                <label for="age">Age:</label>
+
+                <select name="age" id="age">
+                    <option value="young">under 18</option>
+                    <option value="youngAdult">18 - 25</option>
+                    <option value="adult">25-64</option>
+                    <option value="senior">65+</option>
+                </select>
+            </div>
+
+            <input class="register" type="button" value="Register">
+
+        </div>
+
+    </form>
+</body>
+
+</html>
